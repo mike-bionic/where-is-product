@@ -11,7 +11,7 @@ load_dotenv(path.join(basedir, '.env'))
 
 class Config:
 	SECRET_KEY = environ.get('SECRET_KEY') or "123123123"
-	APP_PORT = int(environ.get('APP_PORT')) if environ.get('APP_PORT') else 5000
+	APP_PORT = int(environ.get('APP_PORT')) if environ.get('APP_PORT') else 5300
 	APP_HOST = environ.get('APP_HOST') or "0.0.0.0"
 
 	DEVICE_SECRET =  environ.get('DEVICE_SECRET') or "finger_device_secret"

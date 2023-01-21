@@ -1,6 +1,7 @@
 from main import create_app
+from main.config import Config
 
 app = create_app()
 
 if __name__ == "__main__":
-	app.run(host="0.0.0.0", port = 5300, threaded=True)
+	app.run(host=Config.APP_HOST, port = Config.APP_PORT, threaded=True)
